@@ -5,26 +5,53 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-12-21T14:50:01.306Z</updated>
+  <updated>2016-12-22T02:20:40.097Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
-    <name>Chris Gao</name>
+    <name>一口同乐</name>
     
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Hello World</title>
+    <title>third</title>
+    <link href="http://yoursite.com/2016/12/22/third/"/>
+    <id>http://yoursite.com/2016/12/22/third/</id>
+    <published>2016-12-22T02:20:40.000Z</published>
+    <updated>2016-12-22T02:20:40.097Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Second</title>
+    <link href="http://yoursite.com/2016/12/22/Second/"/>
+    <id>http://yoursite.com/2016/12/22/Second/</id>
+    <published>2016-12-22T02:19:46.000Z</published>
+    <updated>2016-12-22T02:19:46.209Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo Basic Skills</title>
     <link href="http://yoursite.com/2016/12/16/hello-world/"/>
     <id>http://yoursite.com/2016/12/16/hello-world/</id>
     <published>2016-12-16T03:54:46.569Z</published>
-    <updated>2016-12-21T14:50:01.306Z</updated>
+    <updated>2016-12-22T03:10:18.095Z</updated>
     
-    <content type="html"><![CDATA[<p>Hello World</p>
-<a id="more"></a>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
+    <content type="html"><![CDATA[<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><a id="more"></a>
+<h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
 <p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
 <h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
 <p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
@@ -36,9 +63,11 @@
     
     <summary type="html">
     
-      &lt;p&gt;Hello World&lt;/p&gt;
+      &lt;h2 id=&quot;Quick-Start&quot;&gt;&lt;a href=&quot;#Quick-Start&quot; class=&quot;headerlink&quot; title=&quot;Quick Start&quot;&gt;&lt;/a&gt;Quick Start&lt;/h2&gt;
     
     </summary>
+    
+      <category term="Testing" scheme="http://yoursite.com/categories/Testing/"/>
     
     
       <category term="标签" scheme="http://yoursite.com/tags/%E6%A0%87%E7%AD%BE/"/>
