@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-12-22T02:20:40.097Z</updated>
+  <updated>2016-12-22T09:40:55.712Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -16,15 +16,60 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>third</title>
-    <link href="http://yoursite.com/2016/12/22/third/"/>
-    <id>http://yoursite.com/2016/12/22/third/</id>
-    <published>2016-12-22T02:20:40.000Z</published>
-    <updated>2016-12-22T02:20:40.097Z</updated>
+    <title>Git简介及其常用使用指令</title>
+    <link href="http://yoursite.com/2016/12/22/Skills/"/>
+    <id>http://yoursite.com/2016/12/22/Skills/</id>
+    <published>2016-12-22T08:30:11.000Z</published>
+    <updated>2016-12-22T09:40:55.712Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="Git简介"><a href="#Git简介" class="headerlink" title="Git简介"></a>Git简介</h2><p>git简而言之是一个分布式版本控制软件，相对于传统的集中式管理，Git无需联网操作，安全性高（本地存在完整的版本库），以及强大的分支管理特点。</p>
+<p>本文将介绍Git常用的使用流程及指令。</p>
+<a id="more"></a>
+<h2 id="本地操作"><a href="#本地操作" class="headerlink" title="本地操作"></a>本地操作</h2><h3 id="基本操作"><a href="#基本操作" class="headerlink" title="基本操作"></a>基本操作</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git init</div></pre></td></tr></table></figure>
+<p>用于初始化Git可以管理的文件夹。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git add</div></pre></td></tr></table></figure></p>
+<p>用于添加需要Git管理的文件，将文件放入暂存区。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git commit -m <span class="string">""</span></div></pre></td></tr></table></figure></p>
+<p>用于提交Git管理的文件至工作区，其中-m后面的””用于填写提交的备注，方便文件管理。</p>
+<h3 id="版本时光机"><a href="#版本时光机" class="headerlink" title="版本时光机"></a>版本时光机</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git reset --hard commit_id//版本控制</div></pre></td></tr></table></figure>
+<p>HEAD^上一个版本，HEAD~100 往上100个版本。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ git <span class="built_in">log</span>//查看提交历史，用于回退</div><div class="line">$ gti reflog//查看命令历史，用于回到未来</div></pre></td></tr></table></figure></p>
+<h2 id="分支操作"><a href="#分支操作" class="headerlink" title="分支操作"></a>分支操作</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git branch //查看分支</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git branch &lt;name&gt;//创建分支</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git checkout &lt;name&gt; //切换分支</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git checkout -b &lt;name&gt; //创建+切换分支</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git merge &lt;name&gt; //合并某分支到当前分支</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git branch <span class="_">-d</span> &lt;name&gt; //删除分支</div></pre></td></tr></table></figure>
+<h2 id="远程操作"><a href="#远程操作" class="headerlink" title="远程操作"></a>远程操作</h2>]]></content>
     
     <summary type="html">
     
+      &lt;h2 id=&quot;Git简介&quot;&gt;&lt;a href=&quot;#Git简介&quot; class=&quot;headerlink&quot; title=&quot;Git简介&quot;&gt;&lt;/a&gt;Git简介&lt;/h2&gt;&lt;p&gt;git简而言之是一个分布式版本控制软件，相对于传统的集中式管理，Git无需联网操作，安全性高（本地存在完整的版本库），以及强大的分支管理特点。&lt;/p&gt;
+&lt;p&gt;本文将介绍Git常用的使用流程及指令。&lt;/p&gt;
+    
     </summary>
+    
+      <category term="Git" scheme="http://yoursite.com/categories/Git/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>彩云之南</title>
+    <link href="http://yoursite.com/2016/12/22/third/"/>
+    <id>http://yoursite.com/2016/12/22/third/</id>
+    <published>2016-12-22T02:20:40.000Z</published>
+    <updated>2016-12-22T08:26:24.932Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="Photos"><a href="#Photos" class="headerlink" title="Photos"></a>Photos</h2><a id="more"></a>
+<p><img src="https://cl.ly/1f3o0Z3J1j1t/IMG_3728.JPG" alt=""></p>
+<p><img src="https://cl.ly/3m0A162x1Q2k/IMG_3997(20161221-082301" alt="">.jpg)</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;Photos&quot;&gt;&lt;a href=&quot;#Photos&quot; class=&quot;headerlink&quot; title=&quot;Photos&quot;&gt;&lt;/a&gt;Photos&lt;/h2&gt;
+    
+    </summary>
+    
+      <category term="Photographing" scheme="http://yoursite.com/categories/Photographing/"/>
     
     
   </entry>
