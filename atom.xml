@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-12-22T09:40:55.712Z</updated>
+  <updated>2017-05-07T14:13:25.273Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -16,13 +16,27 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Article</title>
+    <link href="http://yoursite.com/2017/05/07/Article/"/>
+    <id>http://yoursite.com/2017/05/07/Article/</id>
+    <published>2017-05-07T14:13:25.000Z</published>
+    <updated>2017-05-07T14:13:25.273Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
     <title>Git简介及其常用使用指令</title>
     <link href="http://yoursite.com/2016/12/22/Skills/"/>
     <id>http://yoursite.com/2016/12/22/Skills/</id>
     <published>2016-12-22T08:30:11.000Z</published>
-    <updated>2016-12-22T09:40:55.712Z</updated>
+    <updated>2017-05-07T14:17:15.450Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="Git简介"><a href="#Git简介" class="headerlink" title="Git简介"></a>Git简介</h2><p>git简而言之是一个分布式版本控制软件，相对于传统的集中式管理，Git无需联网操作，安全性高（本地存在完整的版本库），以及强大的分支管理特点。</p>
+    <content type="html"><![CDATA[<h2 id="Git简介"><a href="#Git简介" class="headerlink" title="Git简介"></a>Git简介</h2><p>Git简而言之是一个分布式版本控制软件，相对于传统的集中式管理，Git无需联网操作，安全性高（本地存在完整的版本库），以及强大的分支管理特点。</p>
 <p>本文将介绍Git常用的使用流程及指令。</p>
 <a id="more"></a>
 <h2 id="本地操作"><a href="#本地操作" class="headerlink" title="本地操作"></a>本地操作</h2><h3 id="基本操作"><a href="#基本操作" class="headerlink" title="基本操作"></a>基本操作</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git init</div></pre></td></tr></table></figure>
@@ -37,11 +51,15 @@
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git checkout -b &lt;name&gt; //创建+切换分支</div></pre></td></tr></table></figure>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git merge &lt;name&gt; //合并某分支到当前分支</div></pre></td></tr></table></figure>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git branch <span class="_">-d</span> &lt;name&gt; //删除分支</div></pre></td></tr></table></figure>
-<h2 id="远程操作"><a href="#远程操作" class="headerlink" title="远程操作"></a>远程操作</h2>]]></content>
+<h2 id="远程操作"><a href="#远程操作" class="headerlink" title="远程操作"></a>远程操作</h2><p>###添加远程库<br>首先需要登入Github,点击右上角的”Create a new repo”按钮；<br>接着我们在本地的仓库下运行命令<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git remote add orgin git@....</div></pre></td></tr></table></figure></p>
+<p>下一步我们将本地内容推送到远程库上,其中git push命令是将当前分支master推送到远程：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git push -u origin master</div></pre></td></tr></table></figure></p>
+<p>第一次推送完成后，我们以后操作只需要使用：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git push origin master</div></pre></td></tr></table></figure></p>
+<h2 id="从远程库克隆"><a href="#从远程库克隆" class="headerlink" title="从远程库克隆"></a>从远程库克隆</h2><p>打开远程库，找到Clone地址，并在本地输入：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git <span class="built_in">clone</span> git@github.com:....</div></pre></td></tr></table></figure></p>
+]]></content>
     
     <summary type="html">
     
-      &lt;h2 id=&quot;Git简介&quot;&gt;&lt;a href=&quot;#Git简介&quot; class=&quot;headerlink&quot; title=&quot;Git简介&quot;&gt;&lt;/a&gt;Git简介&lt;/h2&gt;&lt;p&gt;git简而言之是一个分布式版本控制软件，相对于传统的集中式管理，Git无需联网操作，安全性高（本地存在完整的版本库），以及强大的分支管理特点。&lt;/p&gt;
+      &lt;h2 id=&quot;Git简介&quot;&gt;&lt;a href=&quot;#Git简介&quot; class=&quot;headerlink&quot; title=&quot;Git简介&quot;&gt;&lt;/a&gt;Git简介&lt;/h2&gt;&lt;p&gt;Git简而言之是一个分布式版本控制软件，相对于传统的集中式管理，Git无需联网操作，安全性高（本地存在完整的版本库），以及强大的分支管理特点。&lt;/p&gt;
 &lt;p&gt;本文将介绍Git常用的使用流程及指令。&lt;/p&gt;
     
     </summary>
