@@ -375,7 +375,24 @@
         
           
             <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>本文主要介绍了如何了通过Hexo和Github搭建自己静态博客的详细操作步骤，内容主要针对<code>Windows</code>平台，<code>Github</code>和<code>Hexo3.0</code></p>
-<h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><h3 id="了解Hexo"><a href="#了解Hexo" class="headerlink" title="了解Hexo"></a>了解Hexo</h3><p>Hexo是一个快速、简洁且高效的博客框架，其主要使用Markdown渲染引擎解析文章，在几秒内，即可利用其主题生成静态网页。</p>
+<h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><h3 id="为什么选用Github-Pages搭建静态博客"><a href="#为什么选用Github-Pages搭建静态博客" class="headerlink" title="为什么选用Github Pages搭建静态博客"></a>为什么选用Github Pages搭建静态博客</h3><h4 id="通过Github搭建博客的原理"><a href="#通过Github搭建博客的原理" class="headerlink" title="通过Github搭建博客的原理"></a>通过Github搭建博客的原理</h4><p>Github是一个具有版本管理功能的代码仓库，每个项目有一个主页，主页内会显示项目的源文件。</p>
+<p>Github通过Pages功能，允许用户自定义项目首页，用来替代默认的源码列表。所以Github Pages可以被认为是用户编写的，托管在Github上的静态网页。用户通过Github提供的模板经过Hexo/Jekyll/Octopress程序再处理生成静态文件。</p>
+<h4 id="通过Github搭建博客的优点"><a href="#通过Github搭建博客的优点" class="headerlink" title="通过Github搭建博客的优点"></a>通过Github搭建博客的优点</h4><ol>
+<li><p>免费无限流量；</p>
+</li>
+<li><p>享受Git的版本管理功能；</p>
+</li>
+<li><p>直接通过Markdown编写文章，不需要通过编写前端页面。</p>
+</li>
+</ol>
+<p>由于缺少数据库的关系，所以通过Github无法承载大型网站的开发，但对于搭建中小型的Blog可以完美胜任。</p>
+<h3 id="了解Hexo"><a href="#了解Hexo" class="headerlink" title="了解Hexo"></a>了解Hexo</h3><p>Hexo是一个快速、简洁且高效的博客框架，其主要使用Markdown渲染引擎解析文章，在几秒内，即可利用其主题生成静态网页。</p>
+<h4 id="选择Hexo还是Jekyll"><a href="#选择Hexo还是Jekyll" class="headerlink" title="选择Hexo还是Jekyll"></a>选择Hexo还是Jekyll</h4><p>相较于Jekyll，选择Hexo主要原因是：</p>
+<ol>
+<li>Jekyll没有本地服务器，无法实现本地博文预览功能，需要上传到WEB容器才能预览功能，而Hexo可以通过命令(Hexo s)实现本地的预览，并直接发布到WEB容器中实现同步（Hexo G）。</li>
+<li>Hexo基于NodeJS实现，在Windows上安装NodeJS开发环境简单。</li>
+<li>Hexo主题较多。</li>
+</ol>
 <h3 id="安装GIT"><a href="#安装GIT" class="headerlink" title="安装GIT"></a>安装GIT</h3><p><a href="https://windows.github.com/" target="_blank" rel="external">Github Windows</a></p>
 <p><a href="https://desktop.github.com/" target="_blank" rel="external">Github Mac</a></p>
 <h3 id="安装Node-JS"><a href="#安装Node-JS" class="headerlink" title="安装Node.JS"></a>安装Node.JS</h3><p><a href="https://nodejs.org/en/" target="_blank" rel="external">Node.JS</a></p>
