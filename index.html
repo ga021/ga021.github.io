@@ -373,81 +373,14 @@
 
       
         
-          
-            <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>本文主要介绍了如何了通过Hexo和Github搭建自己静态博客的详细操作步骤，内容主要针对<code>Windows</code>平台，<code>Github</code>和<code>Hexo3.0</code></p>
-<h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><h3 id="为什么选用Github-Pages搭建静态博客"><a href="#为什么选用Github-Pages搭建静态博客" class="headerlink" title="为什么选用Github Pages搭建静态博客"></a>为什么选用Github Pages搭建静态博客</h3><h4 id="通过Github搭建博客的原理"><a href="#通过Github搭建博客的原理" class="headerlink" title="通过Github搭建博客的原理"></a>通过Github搭建博客的原理</h4><p>Github是一个具有版本管理功能的代码仓库，每个项目有一个主页，主页内会显示项目的源文件。</p>
-<p>Github通过Pages功能，允许用户自定义项目首页，用来替代默认的源码列表。所以Github Pages可以被认为是用户编写的，托管在Github上的静态网页。用户通过Github提供的模板经过Hexo/Jekyll/Octopress程序再处理生成静态文件。</p>
-<h4 id="通过Github搭建博客的优点"><a href="#通过Github搭建博客的优点" class="headerlink" title="通过Github搭建博客的优点"></a>通过Github搭建博客的优点</h4><ol>
-<li><p>免费无限流量；</p>
-</li>
-<li><p>享受Git的版本管理功能；</p>
-</li>
-<li><p>直接通过Markdown编写文章，不需要通过编写前端页面。</p>
-</li>
-</ol>
-<p>由于缺少数据库的关系，所以通过Github无法承载大型网站的开发，但对于搭建中小型的Blog可以完美胜任。</p>
-<h3 id="了解Hexo"><a href="#了解Hexo" class="headerlink" title="了解Hexo"></a>了解Hexo</h3><p>Hexo是一个快速、简洁且高效的博客框架，其主要使用Markdown渲染引擎解析文章，在几秒内，即可利用其主题生成静态网页。</p>
-<h4 id="选择Hexo还是Jekyll"><a href="#选择Hexo还是Jekyll" class="headerlink" title="选择Hexo还是Jekyll"></a>选择Hexo还是Jekyll</h4><p>相较于Jekyll，选择Hexo主要原因是：</p>
-<ol>
-<li>Jekyll没有本地服务器，无法实现本地博文预览功能，需要上传到WEB容器才能预览功能，而Hexo可以通过命令(Hexo s)实现本地的预览，并直接发布到WEB容器中实现同步（Hexo G）。</li>
-<li>Hexo基于NodeJS实现，在Windows上安装NodeJS开发环境简单。</li>
-<li>Hexo主题较多。</li>
-</ol>
-<h3 id="安装GIT"><a href="#安装GIT" class="headerlink" title="安装GIT"></a>安装GIT</h3><p><a href="https://windows.github.com/" target="_blank" rel="external">Github Windows</a></p>
-<p><a href="https://desktop.github.com/" target="_blank" rel="external">Github Mac</a></p>
-<h3 id="安装Node-JS"><a href="#安装Node-JS" class="headerlink" title="安装Node.JS"></a>安装Node.JS</h3><p><a href="https://nodejs.org/en/" target="_blank" rel="external">Node.JS</a></p>
-<h3 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h3><p>配置好<code>GitHub</code>家目录后，双击桌面上的<code>Git Shell</code>,输入<code>npm</code>命令即可安装</p>
-<pre><code>npm install hexo-cli -g;
- npm install hexo --save;
-#如果命令无法运行，可以尝试更换taobao的npm源
-npm install -g cnpm --registry=https://registry.npm.taobao.org
-</code></pre><h2 id="Hexo初始化配置"><a href="#Hexo初始化配置" class="headerlink" title="Hexo初始化配置"></a>Hexo初始化配置</h2><p>###创建Hexo文件夹<br>安装完成后，根据自己喜好建立目录（如<code>C:\GitHub\hexo</code>），进入<code>Git Shell</code>切换到该路径下<code>C:\GitHub\hexo</code>执行以下指令</p>
-<pre><code>hexo init
-
-安装 Hexo 完成后，请执行下列命令，Hexo 将会在指定文件夹中新建所需要的文件。
-bash $ hexo init &lt;folder&gt;
-bash $ cd &lt;folder&gt;
-bash $ npm install
-
-#新建完成后，指定文件夹的目录如下
-.
-├── _config.yml
-├── package.json
-├── scaffolds
-├── scripts
-├── source
-|      ├── _drafts
-|      └── _posts
-└── themes
-</code></pre><h3 id="安装Hexo插件"><a href="#安装Hexo插件" class="headerlink" title="安装Hexo插件"></a>安装Hexo插件</h3><pre><code>npm install hexo-generator-index --save
-npm install hexo-generator-archive --save
-npm install hexo-generator-category --save
-npm install hexo-generator-tag --save
-npm install hexo-server --save
-npm install hexo-deployer-git --save
-npm install hexo-deployer-heroku --save
-npm install hexo-deployer-rsync --save
-npm install hexo-deployer-openshift --save
-npm install hexo-renderer-marked@0.2 --save
-npm install hexo-renderer-stylus@0.2 --save
-npm install hexo-generator-feed@1 --save
-npm install hexo-generator-sitemap@1 --save
-</code></pre><h3 id="Hexo简写命令"><a href="#Hexo简写命令" class="headerlink" title="Hexo简写命令"></a>Hexo简写命令</h3><pre><code>hexo n #生成文章，或者source\_posts手动编辑
-hexo s #本地发布预览效果
-hexo g #生成public静态文件
-</code></pre><h2 id="部署静态网页到GitHub"><a href="#部署静态网页到GitHub" class="headerlink" title="部署静态网页到GitHub"></a>部署静态网页到GitHub</h2><h3 id="注册设置GitHub"><a href="#注册设置GitHub" class="headerlink" title="注册设置GitHub"></a>注册设置GitHub</h3><p>1.登入<a href="https://github.com/" target="_blank" rel="external">GitHub</a>，注册</p>
-<p>2.在主页右下角创建<code>New repository</code>,name必须和用户名一致如<code>ga021.github.io</code></p>
-<p>3.随即即可访问静态主页如<a href="http://ga021.github.io/" target="_blank" rel="external">http://ga021.github.io/</a></p>
-<h3 id="同步内容至GitHub"><a href="#同步内容至GitHub" class="headerlink" title="同步内容至GitHub"></a>同步内容至GitHub</h3><p>1.下载GitHub Windows</p>
-<p>2.设置<code>Local path</code>如<code>C:\GitHub\</code></p>
-<p>3.运行<code>Git Shell</code>切换到如<code>C:\GitHub\hexo</code>路径下</p>
-<p>4.执行<code>hexo g</code>命令生成<code>public</code>文件夹</p>
-<p>5.把生成的内容全部拷贝到<code>Local path</code>或其子目录</p>
-<p>6.运行<code>GitHub</code>确认修改信息后执行右上角的<code>Sync</code>同步</p>
-<p>7.最后访问主页观察效果</p>
-<p><a href="http://ga021.github.io/" target="_blank" rel="external">http://ga021.github.io/</a></p>
-
-          
+          <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>本文主要介绍了如何了通过Hexo和Github搭建自己静态博客的详细操作步骤，内容主要针对<code>Windows</code>平台，<code>Github</code>和<code>Hexo3.0</code></p>
+          <!--noindex-->
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2017/05/07/How to build Blog/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
