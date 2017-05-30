@@ -80,12 +80,10 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Blog," />
+  <meta name="keywords" content="wxPython," />
 
 
 
-
-  
 
 
   <link rel="alternate" href="/atom.xml" title="Seeker" type="application/atom+xml" />
@@ -100,16 +98,18 @@
 
 
 
-<meta name="description" content="前言本文主要介绍了如何了通过Hexo和Github搭建自己静态博客的详细操作步骤，内容主要针对Windows平台，Github和Hexo3.0">
+<meta name="description" content="前言本文介绍了在wxPython中wx.ListBox的使用方法。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="如何通过Hexo和Github搭建免费静态博客">
-<meta property="og:url" content="http://yoursite.com/2017/05/07/How to build Blog/index.html">
+<meta property="og:title" content="在wxPython中如何创建列表框">
+<meta property="og:url" content="http://yoursite.com/2017/05/29/wxpython_listbox/index.html">
 <meta property="og:site_name" content="Seeker">
-<meta property="og:description" content="前言本文主要介绍了如何了通过Hexo和Github搭建自己静态博客的详细操作步骤，内容主要针对Windows平台，Github和Hexo3.0">
-<meta property="og:updated_time" content="2017-05-11T13:49:26.338Z">
+<meta property="og:description" content="前言本文介绍了在wxPython中wx.ListBox的使用方法。">
+<meta property="og:image" content="https://cl.ly/290V20163t2n/wxpython_listbox.jpg">
+<meta property="og:updated_time" content="2017-05-30T02:11:17.153Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="如何通过Hexo和Github搭建免费静态博客">
-<meta name="twitter:description" content="前言本文主要介绍了如何了通过Hexo和Github搭建自己静态博客的详细操作步骤，内容主要针对Windows平台，Github和Hexo3.0">
+<meta name="twitter:title" content="在wxPython中如何创建列表框">
+<meta name="twitter:description" content="前言本文介绍了在wxPython中wx.ListBox的使用方法。">
+<meta name="twitter:image" content="https://cl.ly/290V20163t2n/wxpython_listbox.jpg">
 
 
 
@@ -137,13 +137,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2017/05/07/How to build Blog/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/05/29/wxpython_listbox/"/>
 
 
 
 
 
-  <title> 如何通过Hexo和Github搭建免费静态博客 | Seeker </title>
+  <title> 在wxPython中如何创建列表框 | Seeker </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="en">
@@ -266,7 +266,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/05/07/How to build Blog/">
+  <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/05/29/wxpython_listbox/">
 
   <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
     <meta itemprop="name" content="一口同乐">
@@ -290,7 +290,7 @@
             
             
               
-                如何通过Hexo和Github搭建免费静态博客
+                在wxPython中如何创建列表框
               
             
           </h1>
@@ -305,8 +305,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-05-07T22:13:25+08:00">
-                2017-05-07
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-05-29T22:51:43+08:00">
+                2017-05-29
               </time>
             
 
@@ -328,8 +328,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Others/" itemprop="url" rel="index">
-                    <span itemprop="name">Others</span>
+                  <a href="/categories/Python/" itemprop="url" rel="index">
+                    <span itemprop="name">Python</span>
                   </a>
                 </span>
 
@@ -346,8 +346,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2017/05/07/How to build Blog/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/05/07/How to build Blog/" itemprop="commentCount"></span>
+                <a href="/2017/05/29/wxpython_listbox/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/05/29/wxpython_listbox/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -373,79 +373,55 @@
       
 
       
-        <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>本文主要介绍了如何了通过Hexo和Github搭建自己静态博客的详细操作步骤，内容主要针对<code>Windows</code>平台，<code>Github</code>和<code>Hexo3.0</code></p>
+        <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>本文介绍了在wxPython中wx.ListBox的使用方法。</p>
 <a id="more"></a>
-<h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><h3 id="为什么选用Github-Pages搭建静态博客"><a href="#为什么选用Github-Pages搭建静态博客" class="headerlink" title="为什么选用Github Pages搭建静态博客"></a>为什么选用Github Pages搭建静态博客</h3><h4 id="通过Github搭建博客的原理"><a href="#通过Github搭建博客的原理" class="headerlink" title="通过Github搭建博客的原理"></a>通过Github搭建博客的原理</h4><p>Github是一个具有版本管理功能的代码仓库，每个项目有一个主页，主页内会显示项目的源文件。</p>
-<p>Github通过Pages功能，允许用户自定义项目首页，用来替代默认的源码列表。所以Github Pages可以被认为是用户编写的，托管在Github上的静态网页。用户通过Github提供的模板经过Hexo/Jekyll/Octopress程序再处理生成静态文件。</p>
-<h4 id="通过Github搭建博客的优点"><a href="#通过Github搭建博客的优点" class="headerlink" title="通过Github搭建博客的优点"></a>通过Github搭建博客的优点</h4><ol>
-<li><p>免费无限流量；</p>
-</li>
-<li><p>享受Git的版本管理功能；</p>
-</li>
-<li><p>直接通过Markdown编写文章，不需要通过编写前端页面。</p>
-</li>
-</ol>
-<p>由于缺少数据库的关系，所以通过Github无法承载大型网站的开发，但对于搭建中小型的Blog可以完美胜任。</p>
-<h3 id="了解Hexo"><a href="#了解Hexo" class="headerlink" title="了解Hexo"></a>了解Hexo</h3><p>Hexo是一个快速、简洁且高效的博客框架，其主要使用Markdown渲染引擎解析文章，在几秒内，即可利用其主题生成静态网页。</p>
-<h4 id="选择Hexo还是Jekyll"><a href="#选择Hexo还是Jekyll" class="headerlink" title="选择Hexo还是Jekyll"></a>选择Hexo还是Jekyll</h4><p>相较于Jekyll，选择Hexo主要原因是：</p>
-<ol>
-<li>Jekyll没有本地服务器，无法实现本地博文预览功能，需要上传到WEB容器才能预览功能，而Hexo可以通过命令(Hexo s)实现本地的预览，并直接发布到WEB容器中实现同步（Hexo G）。</li>
-<li>Hexo基于NodeJS实现，在Windows上安装NodeJS开发环境简单。</li>
-<li>Hexo主题较多。</li>
-</ol>
-<h3 id="安装GIT"><a href="#安装GIT" class="headerlink" title="安装GIT"></a>安装GIT</h3><p><a href="https://windows.github.com/" target="_blank" rel="external">Github Windows</a></p>
-<p><a href="https://desktop.github.com/" target="_blank" rel="external">Github Mac</a></p>
-<h3 id="安装Node-JS"><a href="#安装Node-JS" class="headerlink" title="安装Node.JS"></a>安装Node.JS</h3><p><a href="https://nodejs.org/en/" target="_blank" rel="external">Node.JS</a></p>
-<h3 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h3><p>配置好<code>GitHub</code>家目录后，双击桌面上的<code>Git Shell</code>,输入<code>npm</code>命令即可安装</p>
-<pre><code>npm install hexo-cli -g;
- npm install hexo --save;
-#如果命令无法运行，可以尝试更换taobao的npm源
-npm install -g cnpm --registry=https://registry.npm.taobao.org
-</code></pre><h2 id="Hexo初始化配置"><a href="#Hexo初始化配置" class="headerlink" title="Hexo初始化配置"></a>Hexo初始化配置</h2><h3 id="创建Hexo文件夹"><a href="#创建Hexo文件夹" class="headerlink" title="创建Hexo文件夹"></a>创建Hexo文件夹</h3><p>安装完成后，根据自己喜好建立目录（如<code>C:\GitHub\hexo</code>），进入<code>Git Shell</code>切换到该路径下<code>C:\GitHub\hexo</code>执行以下指令</p>
-<pre><code>hexo init
+<p>列表框是提供给用户选择的另一机制。选项被放置在一个矩形的窗口中，用户可以选择一个或多个。列表框比单选按钮占据较少的空间，当选项的数目相对少的时候，列表框是一个好的选择。然而，如果用户必须将滚动条拉很远才能看到所有的选项的话，那么它的效用就有所下降了。</p>
+<p><img src="https://cl.ly/290V20163t2n/wxpython_listbox.jpg" alt=""></p>
+<p>在wxPython中，列表框是类wx.ListBox的元素，可以通过该类的方法去处理列表中的选择。</p>
+<h3 id="如何创建一个列表框"><a href="#如何创建一个列表框" class="headerlink" title="如何创建一个列表框"></a>如何创建一个列表框</h3><p>直接上代码</p>
+<pre><code>import wx
 
-安装 Hexo 完成后，请执行下列命令，Hexo 将会在指定文件夹中新建所需要的文件。
-bash $ hexo init &lt;folder&gt;
-bash $ cd &lt;folder&gt;
-bash $ npm install
+class ListBoxFrame(wx.Frame):
+    def __init__(self):
+        wx.Frame.__init__(self, None, -1,&apos;List Box Example&apos;, size = (250,200))
 
-#新建完成后，指定文件夹的目录如下
-.
-├── _config.yml
-├── package.json
-├── scaffolds
-├── scripts
-├── source
-|      ├── _drafts
-|      └── _posts
-└── themes
-</code></pre><h3 id="安装Hexo插件"><a href="#安装Hexo插件" class="headerlink" title="安装Hexo插件"></a>安装Hexo插件</h3><pre><code>npm install hexo-generator-index --save
-npm install hexo-generator-archive --save
-npm install hexo-generator-category --save
-npm install hexo-generator-tag --save
-npm install hexo-server --save
-npm install hexo-deployer-git --save
-npm install hexo-deployer-heroku --save
-npm install hexo-deployer-rsync --save
-npm install hexo-deployer-openshift --save
-npm install hexo-renderer-marked@0.2 --save
-npm install hexo-renderer-stylus@0.2 --save
-npm install hexo-generator-feed@1 --save
-npm install hexo-generator-sitemap@1 --save
-</code></pre><h3 id="Hexo简写命令"><a href="#Hexo简写命令" class="headerlink" title="Hexo简写命令"></a>Hexo简写命令</h3><pre><code>hexo n #生成文章，或者source\_posts手动编辑
-hexo s #本地发布预览效果
-hexo g #生成public静态文件
-</code></pre><h2 id="部署静态网页到GitHub"><a href="#部署静态网页到GitHub" class="headerlink" title="部署静态网页到GitHub"></a>部署静态网页到GitHub</h2><h3 id="注册设置GitHub"><a href="#注册设置GitHub" class="headerlink" title="注册设置GitHub"></a>注册设置GitHub</h3><p>1.登入<a href="https://github.com/" target="_blank" rel="external">GitHub</a>，注册</p>
-<p>2.在主页右下角创建<code>New repository</code>,name必须和用户名一致如<code>ga021.github.io</code></p>
-<p>3.随即即可访问静态主页如<a href="http://ga021.github.io/" target="_blank" rel="external">http://ga021.github.io/</a></p>
-<h3 id="同步内容至GitHub"><a href="#同步内容至GitHub" class="headerlink" title="同步内容至GitHub"></a>同步内容至GitHub</h3><p>1.下载GitHub Windows</p>
-<p>2.设置<code>Local path</code>如<code>C:\GitHub\</code></p>
-<p>3.运行<code>Git Shell</code>切换到如<code>C:\GitHub\hexo</code>路径下</p>
-<p>4.执行<code>hexo g</code>命令生成<code>public</code>文件夹</p>
-<p>5.把生成的内容全部拷贝到<code>Local path</code>或其子目录</p>
-<p>6.运行<code>GitHub</code>确认修改信息后执行右上角的<code>Sync</code>同步</p>
-<p>7.最后访问主页观察效果</p>
-<p><a href="http://ga021.github.io/" target="_blank" rel="external">http://ga021.github.io/</a></p>
+        panel = wx.Panel(self,-1)
+        sampleList = [&apos;zero&apos;,&apos;one&apos;,&apos;two&apos;,&apos;three&apos;,&apos;four&apos;,&apos;five&apos;,&apos;six&apos;]
+        listBox = wx.ListBox(panel,-1,(20,20),(80,120),sampleList,wx.LB_SINGLE)
+        listBox.SetSelection(3)
+
+if __name__ == &apos;__main__&apos;:
+    app = wx.PySimpleApp()
+    ListBoxFrame().Show()
+    app.MainLoop()
+</code></pre><p>wx.ListBox的构造函数类似于单选框：</p>
+<pre><code>wx.ListBox(parent,id,pos = wx.DefaultPosition,size = wx.DefaultSize,choices = None,style = 0,validator = wx.DefaultValidator, name=&quot;listBox&quot;)
+</code></pre><p>单选框和列表框的主要区别是wx.ListBox没有label属性。</p>
+<p>参数choices中放置需要显示在列表中的元素，它是一字符串的序列。</p>
+<p>列表框中有三种互斥的样式，它决定用户如何从列表框中选择元素。</p>
+<h3 id="列表框的选择类型样式"><a href="#列表框的选择类型样式" class="headerlink" title="列表框的选择类型样式"></a>列表框的选择类型样式</h3><p>wx.LB_EXTENDED:用户可以通过使用shift（或使用等同功能的按键）并敲击鼠标来选择一定范围内的连续选项。</p>
+<p>wx.LB_MULTIPLE: 用户可以一次选择多个选项（选项可以是不连续的），相当于一组复选框。</p>
+<p>wx.LB_SINGLE: 用户一次只能选一个选项。</p>
+<h3 id="列表框的滚动条类型样式"><a href="#列表框的滚动条类型样式" class="headerlink" title="列表框的滚动条类型样式"></a>列表框的滚动条类型样式</h3><p>wx.LB_ALWAYS_SB: 列表框将始终显示一个垂直的滚动条。</p>
+<p>wx.LB_HSCROLL: 列表框只在需要时显示一个垂直的滚动条，默认样式。</p>
+<p>wx.LB_SORT：列表中的元素按字母顺序排序。</p>
+<p>有两个专用于wx.ListBox的命令事件：</p>
+<p>EVT_LISTBOX事件在当列表中的一个元素被选择时触发（即使它是当前所选择的元素）。</p>
+<p>EVT_LISTBOX_DCLICK当列表被双击时触发。</p>
+<h3 id="列表框的方法"><a href="#列表框的方法" class="headerlink" title="列表框的方法"></a>列表框的方法</h3><p><code>Append(item)</code> 把字符串项目添加到列表框的尾部。</p>
+<p><code>clear()</code> 清空列表框。</p>
+<p><code>Delete(n)</code> 删除列表框中索引为n的项目。</p>
+<p><code>Deselect(n)</code>在多重选择列表框中，导致位于位置n的选项取消选中。</p>
+<p><code>FindString(string)</code> 返回给定字符串的整数位置，如果没有发现则返回-1。</p>
+<p><code>GetCount()</code> 返回列表中字符串的数量。</p>
+<p><code>GetSelection()</code> 得到当前选择项的整数索引（仅对于单选列表）。</p>
+<p><code>GetSelections()</code> 对于对选列表，返回包含所选项目的整数位置的元组。</p>
+<p><code>GetStringSelection()</code> 返回当前选择的字符串。</p>
+<p><code>SetStringSelection(string,select)</code> 使用布尔值参数select设置指定字符串或索引选项的状态。使用这种方法改变选择不触发EVT_LISTBOX事件。</p>
+<p><code>GetString(n),SetString(n, string)</code> 得到或设置位置n处的字符串。</p>
+<p><code>InsertItems(items, pos)</code> 插入参数items中的字符串列表到该列表框中pos参数所指定的位置前。位置0表示把项目放在列表的开头。</p>
+<p><code>Selected(n)</code> 返回对应于索引为n的项目的选择状态的布尔值。</p>
+<p><code>Set(choices)</code> 重新使用choices的内容设置列表框。</p>
 
       
     </div>
@@ -469,7 +445,7 @@ hexo g #生成public静态文件
       
         <div class="post-tags">
           
-            <a href="/tags/Blog/" rel="tag"># Blog</a>
+            <a href="/tags/wxPython/" rel="tag"># wxPython</a>
           
         </div>
       
@@ -478,8 +454,8 @@ hexo g #生成public静态文件
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/12/22/Skills/" rel="next" title="Git简介及其常用使用指令">
-                <i class="fa fa-chevron-left"></i> Git简介及其常用使用指令
+              <a href="/2017/05/22/wxpython_sizer/" rel="next" title="在wxpython中如何布局可视化控件">
+                <i class="fa fa-chevron-left"></i> 在wxpython中如何布局可视化控件
               </a>
             
           </div>
@@ -487,10 +463,6 @@ hexo g #生成public静态文件
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/05/22/wxpython_sizer/" rel="prev" title="在wxpython中如何布局可视化控件">
-                在wxpython中如何布局可视化控件 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -516,8 +488,8 @@ hexo g #生成public静态文件
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2017/05/07/How to build Blog/"
-           data-title="如何通过Hexo和Github搭建免费静态博客" data-url="http://yoursite.com/2017/05/07/How to build Blog/">
+      <div class="ds-thread" data-thread-key="2017/05/29/wxpython_listbox/"
+           data-title="在wxPython中如何创建列表框" data-url="http://yoursite.com/2017/05/29/wxpython_listbox/">
       </div>
     
   </div>
@@ -644,7 +616,7 @@ hexo g #生成public静态文件
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#准备工作"><span class="nav-number">2.</span> <span class="nav-text">准备工作</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#为什么选用Github-Pages搭建静态博客"><span class="nav-number">2.1.</span> <span class="nav-text">为什么选用Github Pages搭建静态博客</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#通过Github搭建博客的原理"><span class="nav-number">2.1.1.</span> <span class="nav-text">通过Github搭建博客的原理</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#通过Github搭建博客的优点"><span class="nav-number">2.1.2.</span> <span class="nav-text">通过Github搭建博客的优点</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#了解Hexo"><span class="nav-number">2.2.</span> <span class="nav-text">了解Hexo</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#选择Hexo还是Jekyll"><span class="nav-number">2.2.1.</span> <span class="nav-text">选择Hexo还是Jekyll</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装GIT"><span class="nav-number">2.3.</span> <span class="nav-text">安装GIT</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装Node-JS"><span class="nav-number">2.4.</span> <span class="nav-text">安装Node.JS</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装Hexo"><span class="nav-number">2.5.</span> <span class="nav-text">安装Hexo</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Hexo初始化配置"><span class="nav-number">3.</span> <span class="nav-text">Hexo初始化配置</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#创建Hexo文件夹"><span class="nav-number">3.1.</span> <span class="nav-text">创建Hexo文件夹</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装Hexo插件"><span class="nav-number">3.2.</span> <span class="nav-text">安装Hexo插件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Hexo简写命令"><span class="nav-number">3.3.</span> <span class="nav-text">Hexo简写命令</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#部署静态网页到GitHub"><span class="nav-number">4.</span> <span class="nav-text">部署静态网页到GitHub</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#注册设置GitHub"><span class="nav-number">4.1.</span> <span class="nav-text">注册设置GitHub</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#同步内容至GitHub"><span class="nav-number">4.2.</span> <span class="nav-text">同步内容至GitHub</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#如何创建一个列表框"><span class="nav-number">1.1.</span> <span class="nav-text">如何创建一个列表框</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#列表框的选择类型样式"><span class="nav-number">1.2.</span> <span class="nav-text">列表框的选择类型样式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#列表框的滚动条类型样式"><span class="nav-number">1.3.</span> <span class="nav-text">列表框的滚动条类型样式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#列表框的方法"><span class="nav-number">1.4.</span> <span class="nav-text">列表框的方法</span></a></li></ol></li></ol></div>
             
 
           </div>
